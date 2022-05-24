@@ -1,17 +1,23 @@
-<template>
-  <div>
-    
+<template >
+  <div class="app">
   </div>
 </template>
 
 <script>
+
+
 export default {
   name: "App",
+  data() {
+    return {
+      cities: ["Алматы", "Нур-Султан", "Караганды", "Актау", "Атырау"],
+    };
+  },
 };
 </script>
 
 <style lang='scss'>
-#app {
+.app {
   position: absolute;
   top: 0;
   left: 0;
@@ -31,6 +37,14 @@ export default {
     max-width: 1440px;
     padding: 0 48px;
     margin: 0 auto;
+  }
+}
+
+.header {
+  &__row {
+    &_top {
+      height: 52px;
+    }
   }
 }
 </style>
