@@ -38,6 +38,9 @@ export default {
     font-size: 16px;
     letter-spacing: -0.04em;
     color: #999999;
+    &:hover{
+      color: rgb(247, 72, 9);
+    }
   }
 }
 </style>

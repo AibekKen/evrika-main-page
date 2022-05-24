@@ -4,13 +4,14 @@
 </template>
 
 <script>
-
-
 export default {
   name: "App",
+  components: {
+  },
   data() {
     return {
       cities: ["Алматы", "Нур-Султан", "Караганды", "Актау", "Атырау"],
+      contacts: ["7 707 777 77 77", "8 808 000 00 00"],
     };
   },
 };
@@ -32,7 +33,7 @@ export default {
   font-family: $fontfamily;
   font-weight: 400;
   font-size: 50px;
-
+  transition: all 0.3s ease;
   .container {
     max-width: 1440px;
     padding: 0 48px;
