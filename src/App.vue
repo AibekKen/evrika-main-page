@@ -1,22 +1,19 @@
 <template >
   <div class="app">
+    <header-body />
   </div>
 </template>
 
 <script>
+import HeaderBody from "./components/HeaderBody.vue";
+
 export default {
   name: "App",
   components: {
-  },
-  data() {
-    return {
-      cities: ["Алматы", "Нур-Султан", "Караганды", "Актау", "Атырау"],
-      contacts: ["7 707 777 77 77", "8 808 000 00 00"],
-    };
+    HeaderBody,
   },
 };
 </script>
-
 <style lang='scss'>
 .app {
   position: absolute;
@@ -32,20 +29,12 @@ export default {
   @import "@/assets/styles/nullstyle.scss";
   font-family: $fontfamily;
   font-weight: 400;
-  font-size: 50px;
   transition: all 0.3s ease;
-  .container {
-    max-width: 1440px;
-    padding: 0 48px;
-    margin: 0 auto;
-  }
 }
 
-.header {
-  &__row {
-    &_top {
-      height: 52px;
-    }
-  }
+.container {
+  max-width: 1440px;
+  padding: 0 48px;
+  margin: 0 auto;
 }
 </style>

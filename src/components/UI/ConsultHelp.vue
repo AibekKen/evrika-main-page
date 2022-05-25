@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div class="help">
       <div class="help__icon">
         <img src="@/assets/images/icons/phone-icon.svg" alt="" />
@@ -11,10 +10,11 @@
         </option>
       </select>
     </div>
-  </div>
 </template>
 <script>
+
 export default {
+  
   data() {
     return {
       selectedCity: "help",
