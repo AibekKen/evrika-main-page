@@ -82,9 +82,10 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .item {
   position: relative;
+  display: block;
   width: 262.4px;
   height: 338px;
   background: #ffffff;

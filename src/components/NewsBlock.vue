@@ -2,7 +2,7 @@
   <div class="news-block">
     <div class="news-block__title title">Новинки</div>
     <div class="news-block__body">
-      <product-card :newProducts="newProducts" />
+      <product-card class="news-block__card" :newProducts="newProducts" />
     </div>
   </div>
 </template>
@@ -140,18 +140,18 @@ export default {
   },
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .news-block {
   &__body {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
     margin: 0 -8px 0 0;
   }
   &__title {
-    margin: 0 0 5px 3px;
   }
-  &__item {
+  &__card {
     margin: 0 8px 8px 0;
   }
 }
