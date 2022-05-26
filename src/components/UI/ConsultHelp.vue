@@ -1,20 +1,18 @@
 <template>
-    <div class="help">
-      <div class="help__icon">
-        <img src="@/assets/images/icons/phone-icon.svg" alt="" />
-      </div>
-      <select v-model="selectedCity" id="select-help" class="help__select">
-        <option value="help" selected disabled>Помощь и консультация</option>
-        <option v-for="contact in contacts" :key="contact" :value="contact">
-          {{ contact }}
-        </option>
-      </select>
+  <div class="help">
+    <div class="help__icon">
+      <img src="@/assets/images/icons/phone-icon.svg" alt="" />
     </div>
+    <select v-model="selectedCity" id="select-help" class="help__select">
+      <option value="help" selected disabled>Помощь и консультация</option>
+      <option v-for="contact in contacts" :key="contact" :value="contact">
+        {{ contact }}
+      </option>
+    </select>
+  </div>
 </template>
 <script>
-
 export default {
-  
   data() {
     return {
       selectedCity: "help",
@@ -32,6 +30,7 @@ export default {
   display: inline-flex;
   height: 32px;
   padding: 4px 10px;
+  background: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 30px;
   &__icon {
