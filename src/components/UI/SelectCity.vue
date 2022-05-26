@@ -25,6 +25,7 @@ export default {
   display: inline-flex;
   height: 32px;
   padding: 7px 10px;
+  background: #FFFFFF;
   border: 1px solid #e0e0e0;
   border-radius: 30px;
   &__geotag-icon {
