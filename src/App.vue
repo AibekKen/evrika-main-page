@@ -6,7 +6,9 @@
         <sidebar-category />
         <big-banner />
       </div>
-      <news-block />
+      <news-block class="news" />
+      <brands-logo class="logo" />
+      <about-us />
     </div>
   </div>
 </template>
@@ -16,6 +18,8 @@ import HeaderBody from "./components/HeaderBody.vue";
 import SidebarCategory from "./components/SidebarCategory.vue";
 import BigBanner from "./components/BigBanner.vue";
 import NewsBlock from "./components/NewsBlock.vue";
+import BrandsLogo from "./components/BrandsLogo.vue";
+import AboutUs from "./components/AboutUs.vue";
 
 export default {
   name: "App",
@@ -24,6 +28,8 @@ export default {
     SidebarCategory,
     BigBanner,
     NewsBlock,
+    BrandsLogo,
+    AboutUs,
   },
 };
 </script>
@@ -63,5 +69,15 @@ export default {
   font-weight: 800;
   font-size: 28.5px;
   color: #000000;
+}
+
+.news {
+  margin: 0 0 32px 0;
+}
+.logo {
+  margin: 0 0 32px 0;
+}
+
+.title {
 }
 </style>
