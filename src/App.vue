@@ -7,7 +7,7 @@
         <big-banner />
       </div>
       <news-block class="news" />
-      <brands-logo class="logo" />
+      <brands-logo class="logos" />
       <about-us />
     </div>
   </div>
@@ -74,7 +74,7 @@ export default {
 .news {
   margin: 0 0 32px 0;
 }
-.logo {
+.logos {
   margin: 0 0 32px 0;
 }
 

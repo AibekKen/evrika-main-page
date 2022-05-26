@@ -86,6 +86,7 @@ export default {
   }
 }
 .logo {
+  align-self: start;
 }
 .search {
   flex: 0 1 calc((675 / 1344) * 100%);
