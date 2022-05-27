@@ -1,16 +1,16 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <footer-top />
-      <div class="footer__footer-bottom footer-bottom"></div>
-    </div>
+    <footer-top />
+    <footer-bottom />
   </footer>
 </template>
 <script>
 import FooterTop from "@/components/FooterTop.vue";
+import FooterBottom from "@/components/FooterBottom.vue";
 export default {
   components: {
     FooterTop,
+    FooterBottom,
   },
   data() {
     return {
@@ -57,7 +57,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .footer {
-  padding: 24px 0;
-  background: #ffffff;
+
 }
 </style>
