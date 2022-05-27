@@ -1,17 +1,23 @@
 <template>
   <div class="footer__footer-top footer-top">
-    <subs-us class="subs-us" />
-    <links-list class="links-list" :listBlock="companyLinks" />
-    <links-list class="links-list links-list_2" :listBlock="clientLinks" />
-    <links-list class="links-list links-list_3" :listBlock="serviceLinks" />
-    <div class="footer-top__contacts contacts">
-      <div class="subtitle contacts__title">Контакты</div>
-      <a href="tel:+77719365454" class="contacts__number">+7(771) 936-54-54</a>
-      <div class="text contacts__time">С 09:00 до 21:00 (без выходных)</div>
-      <a href="#" class="contacts__links">Написать на WhatsApp</a>
-      <a href="mailto:support@evrika.com" class="contacts__links"
-        >support@evrika.com</a
-      >
+    <div class="container">
+      <div class="footer-top__body">
+        <subs-us class="subs-us" />
+        <links-list class="links-list" :listBlock="companyLinks" />
+        <links-list class="links-list links-list_2" :listBlock="clientLinks" />
+        <links-list class="links-list links-list_3" :listBlock="serviceLinks" />
+        <div class="footer-top__contacts contacts">
+          <div class="subtitle contacts__title">Контакты</div>
+          <a href="tel:+77719365454" class="contacts__number"
+            >+7(771) 936-54-54</a
+          >
+          <div class="text contacts__time">С 09:00 до 21:00 (без выходных)</div>
+          <a href="#" class="contacts__links">Написать на WhatsApp</a>
+          <a href="mailto:support@evrika.com" class="contacts__links"
+            >support@evrika.com</a
+          >
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -82,12 +88,16 @@ export default {
   margin: 0 93px 0 0;
 }
 .footer-top {
-  display: flex;
-  &__column {
+  &__body {
+    display: flex;
+    &__column {
+    }
   }
 }
 
 .footer-top {
+  padding: 24px 0;
+  background: #ffffff;
   &__contacts {
   }
 }
