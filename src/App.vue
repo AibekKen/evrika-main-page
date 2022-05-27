@@ -8,8 +8,9 @@
       </div>
       <news-block class="news" />
       <brands-logo class="logos" />
-      <about-us />
+      <about-us class="about-us" />
     </div>
+    <footer-block />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import BigBanner from "./components/BigBanner.vue";
 import NewsBlock from "./components/NewsBlock.vue";
 import BrandsLogo from "./components/BrandsLogo.vue";
 import AboutUs from "./components/AboutUs.vue";
+import FooterBlock from "./components/FooterBlock.vue";
 
 export default {
   name: "App",
@@ -30,6 +32,7 @@ export default {
     NewsBlock,
     BrandsLogo,
     AboutUs,
+    FooterBlock,
   },
 };
 </script>
@@ -70,6 +73,19 @@ export default {
   font-size: 28.5px;
   color: #000000;
 }
+.subtitle {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  margin: 0 0 23px 0;
+}
+.text {
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  color: #999999;
+}
 
 .news {
   margin: 0 0 32px 0;
@@ -77,7 +93,7 @@ export default {
 .logos {
   margin: 0 0 32px 0;
 }
-
-.title {
+.about-us {
+  margin: 0 0 32px 0;
 }
 </style>
