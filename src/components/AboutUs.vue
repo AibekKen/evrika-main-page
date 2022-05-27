@@ -38,6 +38,7 @@ export default {};
   }
 
   &__body {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background: #ffffff;
